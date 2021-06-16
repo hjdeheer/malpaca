@@ -1,0 +1,22 @@
+{
+  "name": "malpaca-pub",
+  "version": "1.0.0",
+  "description": "This repo contains the implementation of MalPaCA (Malware Packet-sequence Clustering and Analysis).",
+  "main": "malpaca.py",
+  "scripts": {
+    "cleanup": "rmdir /s /q output && mkdir output",
+    "start": "python malpaca.py folder data data & npm run moveOutput",
+    "moveOutput": "move *-data-20* output",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tudelft-cda-lab/malpaca-pub.git"
+  },
+  "author": "Azqa Nadeem",
+  "license": "SEE LICENSE IN LICENCE",
+  "bugs": {
+    "url": "https://github.com/tudelft-cda-lab/malpaca-pub/issues"
+  },
+  "homepage": "https://github.com/tudelft-cda-lab/malpaca-pub#readme"
+}
